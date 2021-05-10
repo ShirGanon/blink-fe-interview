@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  height: 800px;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.itemCard{
+  border: solid 1px #8080803b;;
+  border-radius: 50px;
+  min-width: 500px;
+  max-width: 650px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin: 6px;
+}
+.itemCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardHeader{
+  border-bottom: solid;
+}
+.ageTitle{
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translate(-100%);
+}
+.cardBody{
+  display:flex;
+  justify-content:space-evenly;
+}
+
+.filterBtn{
+  cursor: pointer;
+}
+
+.filterBtn:active{
+  transform: scale(0.8);
+}
+
+.sortBtn{
+  cursor: pointer;
+}
+
+.sortBtn:active{
+  transform: scale(0.8);
+}
+
+.restartBtn{
+  cursor: pointer;
+}
+
+.restartBtn:active{
+  transform: scale(0.8);
+}
+
+.filterWindow{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.onFilterChecked{
+  background-color: #bde9f5;
+}
+
+.filterBody{
+  width: fit-content;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.filterAgeBtn{
+  cursor: pointer;
+  border-bottom: solid 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.filterAvgReplyTimeBtn{
+  cursor: pointer;
+  border-bottom: solid 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.filterList{
+  max-height: 100px;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+.sortWindow{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sortBody{
+  width: fit-content;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.sortSelect{
+  background-color: #bde9f5;
+}
+
+.sortByNameDiv{
+  cursor: pointer;
+  border-bottom: solid 1px;
+  border-top-left-radius : 5px;
+  border-top-right-radius: 5px;
+}
+
+.sortByAgeDiv{
+  cursor: pointer;
+  border-bottom-left-radius : 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.subFilterSelected{
+  background-color: gray;
+}
+
+.hide{
+  display: none;
+}
